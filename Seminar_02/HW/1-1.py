@@ -9,8 +9,6 @@ for i in range(n):
     while (head!=0) and (head !=1):
         head = int(input('Input head (head - 1, tail - 0): '))
     count += head
-if (n - count)>count:
-    count
-else:
-    count = n - count
+if (n - count)<count:
+    count = n - count 
 print(f"The count of coins is needed to rotate: {count}")
