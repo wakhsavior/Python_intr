@@ -11,12 +11,11 @@ def main():
         a,b = b,a
     list_01 = [random.randint(1,20) for i in range(N)]
     count = 0
-    for i in list_01:
-        if a <= i <= b:
-            count += 1
-        
     print(list_01)
     print(f"{a} : {b}")
+    for i in range(len(list_01)):
+        if a <= list_01[i] <= b:
+            print(i)    
     print (count)
     
 
