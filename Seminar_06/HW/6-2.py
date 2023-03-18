@@ -17,6 +17,9 @@ def main():
         if a <= list_01[i] <= b:
             print(i)    
     print (count)
+
+
+    # print([ind for ind, val in enumerate(nums_list) if num_min <= val <= num_max])
     
 
 if __name__ == "__main__":
