@@ -16,7 +16,7 @@ list_01 = [1,2,3,4,2,3,8,4,3,5,6,5,3,8]
 start = time()
 
 dict_list = {}.fromkeys(list_01,0)
-# print(dict_list)
+print(dict_list)
 for i in list_01:
     dict_list[i] += 1
 print(time() - start)
