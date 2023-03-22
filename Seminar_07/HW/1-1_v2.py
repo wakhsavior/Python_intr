@@ -10,7 +10,9 @@ def main():
     poem = input("Enter Phrase: ")
     letters = {}.fromkeys(vowels,0)
 
-    if (len(set(len(x) for x in count_letters(lambda x: letters.get(x),poem))) == 1):   
+    vowels_num = set(len(x) for x in count_letters(lambda x: letters.get(x),poem))
+
+    if (len(vowels_num) == 1 and (tuple(vowels_num))[0] != 0):   
         print("Парам пам-пам")
     else:
         print("Пам парам")

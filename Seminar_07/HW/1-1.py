@@ -21,7 +21,10 @@ def ritm(ritm_line):
         vowels_num.append(sum(letters.values()))
     print(vowels_num)        
     if len(set(vowels_num)) == 1:
-        return True
+        if (tuple(set(vowels_num)))[0] == 0:
+            return False 
+        else:
+            return True
     else:
         return False 
 
