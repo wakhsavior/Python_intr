@@ -11,12 +11,13 @@
 def print_operation_table(operation, num_rows=6, num_columns=6):
     for i in range(1,num_rows+1):
         for j in range(1,num_columns+1):
-            print(operation(i,j), end = '\t')
+            # print(operation(i,j), end = '\t')
+            print(f"{operation(i,j):5}", end = ' ')
         print()
 
 def main():
 
-    print_operation_table(lambda x, y: x * y)
+    print_operation_table(lambda x, y: x * y, 9, 9)
 
 if __name__ == "__main__":
     main()
